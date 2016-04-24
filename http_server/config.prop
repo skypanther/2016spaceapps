@@ -1,0 +1,4 @@
+list = dir
+edit = notepad d:\config.prop
+~weather = hello weather
+redalert = redalert
