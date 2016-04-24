@@ -2,19 +2,30 @@
 
 ##Enterprise Bridge Simulator
 
-What is it, what does it do
+Our Space Apps Challenge entry is a USS Enterprise Bridge simulator. Using just your voice, sound a red alert, fire your phasers, or announce that the Eagle has landed on the moon.
 
-Voice commands supported:
+See our project page at [Enterprise Bridge Simulator](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience/projects/enterprise-bridge-simulator)
 
-* red alert
-* intruder
-* status report
-* fire photon torpedos
-* fire phasers
-* self destruct
-* moon landing
+Our system was build for the Rochester Space Apps Challenge held at the Rochester Institute of Technology (RIT). Our four-person team represented the local AppRochester tech group and included (in alphabetical order):
 
-You can get the necessary sounds from http://www.soundboard.com/ We are not including them in this repo for licensing reasons (we don't have permissions to re-distribute those files, though you can download them and use them yourself).
+* Tanweer Alam
+* Todd Bernhard
+* Bob Manard
+* Tim Poulsen
+
+Our solution used an iOS app to accept your voice input. It converts your speech to text, sending the resulting command to a NodeJS server which then played sound, turned on lights, and flashed the server's computer screen.
+
+Technologies used include:
+
+* ObjectiveC/Xcode
+* NodeJS
+* HTML/JavaScript
+* NASA Sound Archives https://soundcloud.com/nasa/sets
+* PolitePix OpenEars Open Source Speech Recognition http://www.politepix.com/openears/
+* Belkin WeMo Home Automation Switches
+
+
+Note: We are not including the sound files in this repository to avoid licensing issues. We don't necessarily have permissions to redistribute the files. But, you can get the necessary sounds from the [NASA Sound Archive](https://soundcloud.com/nasa/sets) and [SoundBoard](http://www.soundboard.com/).
 
 ## Requirements
 
@@ -37,9 +48,9 @@ Clone this repo to your computer:
 ### Compile and install the app
 
 1. Open `OpenEarsSampleApp.xcodeproj` in Xcode
-2. Open OpenEarsSampleApp, ViewController.m and edit the following line to match your server's IP address and port ```NSString * server =@"http://172.20.10.7:8080/"```
+2. Open OpenEarsSampleApp, ViewController.m and edit the following line to match your server's IP address and port `NSString * server =@"http://172.20.10.7:8080/"` (this must match the address and port you configure in the server, see below).
 2. Connect your device
-3. Specify your device as the target and choose Run
+3. Specify your device as the target and choose Run on device
 
 ### Find your WeMo device addresses
 
@@ -75,3 +86,13 @@ This will print the IP addresses of your WeMo devices to the screen. You can pre
 * moonlanding
 
 With the app running on your iOS device, speak one of the commands listed at the top of this page. After a moment, the sounds should play and lights flash. 
+
+Voice commands supported:
+
+* red alert
+* intruder
+* status report
+* fire photon torpedos
+* fire phasers
+* self destruct
+* moon landing
