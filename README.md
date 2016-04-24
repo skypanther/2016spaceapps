@@ -4,7 +4,7 @@
 
 Our Space Apps Challenge entry is a USS Enterprise Bridge simulator. Using just your voice, sound a red alert, fire your phasers, or announce that the Eagle has landed on the moon.
 
-See our project page at [Enterprise Bridge Simulator](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience/projects/enterprise-bridge-simulator)
+See our project page at [Enterprise Bridge Simulator](https://2016.spaceappschallenge.org/challenges/space-station/launch-a-global-experience/projects/enterprise-bridge-simulator) or our web site at [www.EnterpriseBridge.us](http://www.EnterpriseBridge.us).
 
 Our system was build for the Rochester Space Apps Challenge held at the Rochester Institute of Technology (RIT). Our four-person team represented the local AppRochester tech group and included (in alphabetical order):
 
