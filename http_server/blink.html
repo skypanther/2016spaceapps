@@ -4,6 +4,13 @@
 			var xmlhttp = new XMLHttpRequest();
 			var url = "http://172.20.10.7:8080/?status=status";
 			
+			var statusText = {
+				redalert: 'Red Alert!',
+				intruder: 'Intruder Alert',
+				selfdestruct: 'Self Destruct Initiated',
+				firephasers: '',
+				firephotontorpedos: ''
+			}
 			xmlhttp.onreadystatechange = function() {
 				console.log(xmlhttp.responseText)
 			    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -13,7 +20,7 @@
 
 			function handleStatus(state) {
 				if (['redalert', 'intruder', 'firephasers', 'selfdestruct', 'firephotontorpedos'].indexOf(state) !== -1) {
-					startBlinking();
+					startBlinking(state);
 				} else {
 					stopBlinking();
 				}
@@ -39,7 +46,7 @@
 
 			var timerInterval = null;
 
-			startBlinking = function() {
+			startBlinking = function(state) {
 			   if(timerInterval === null)
 			       timerInterval = setInterval(Timer, 500);
 			}

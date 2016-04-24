@@ -1,0 +1,47 @@
+.home {
+	font-family: Arial;
+	font-size: small;
+	color: #FFFFFF;
+	background-color: 807C6C;
+	background-image:url(http://movies.trekcore.com/images/background_page.jpg);
+	background-repeat:repeat-x;
+}
+a {
+	text-decoration: none;
+	color: #F3E113;
+
+}
+A:active {
+	COLOR: #F3E113; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #F3E113; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #F3E113; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #FD9D33; TEXT-DECORATION: none
+}
+
+BODY 
+{ 
+scrollbar-base-color: #8F9179; 
+scrollbar-arrow-color: #000000;
+scrollbar-DarkShadow-Color: #000000; 
+}
+
+.homehead {
+	font-size: 16px;}
+
+.pagelink a, .pagelink strong {
+    padding: 2px;
+    background-color: #847959;
+    border: 1px solid #FFFFFF; 
+}
+
+ul {
+
+	list-style-image: url('http://gaming.trekcore.com/images/bullett.jpg');
+
+}

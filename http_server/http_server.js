@@ -7,7 +7,7 @@ var fs = require('fs');
 var exec = require('child_process').exec;
 
 //Lets define a port we want to listen to
-const HOST = "172.20.10.7";
+const HOST = "172.20.10.7"; // this needs to be a valid address on your network
 const PORT = 8080;
 
 var actionHandler = new require('./actions/actionhandler');
