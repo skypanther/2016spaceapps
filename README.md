@@ -52,25 +52,9 @@ Clone this repo to your computer:
 2. Connect your device
 3. Specify your device as the target and choose Run on device
 
-### Find your WeMo device addresses
+### Set up the server
 
-Make sure your WeMo switches are on the same network as your server and your iOS device. Update their firmware and configure them through the WeMo app as necessary. 
-
-Then, from the `http_server` directory, run 
-
-```node wemoDiscover.js```
-
-This will print the IP addresses of your WeMo devices to the screen. You can press `Ctrl+C` to exit that program. You'll need those addresses in the next section.
-
-### Set up and run the server
-
-1. Install Node.js on your computer. We used 4.2.4, though newer versions should be supported.
-2. Change to the `http_server` folder
-3. Run `npm install` to install the dependencies for this project
-4. Edit http_server.js and change the values of HOST and PORT. HOST must be a valid address on your network (localhost or 127.0.0.1 will not work) and PORT can be anything, though 8080 is common.
-5. Edit actions/actionHandler.js to set the IP addresses of your WeMo devices
-6. Make sure all your changes are saved.
-7. Run `node http_server` to start the server
+See the readme file in the [server folder](server/readme.md) for server setup instructions.
 
 ### Running the demo
 

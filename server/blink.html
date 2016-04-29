@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<script>
+			var xmlhttp = new XMLHttpRequest();
+			var url = 'http:192.68.26?status=status'; 
+			
+			xmlhttp.onreadystatechange = function() {
+			    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+			        handleStatus(xmlhttp.responseText);
+			    }
+			};
+
+			function handleStatus(state) {
+				if (state === 'blink') {
+					startBlinking(state);
+				} else {
+					stopBlinking();
+				}
+			}
+
+			var x=1;
+			var set;
+
+			function Timer() 
+			{
+			    set=1;
+			    if (x===0 && set===1) {
+			        document.bgColor='#a00';
+			        x=1;
+			        set=0;
+			    }
+			    if (x===1 && set===1) {
+			        document.bgColor='#FFFFFF';
+			        x=0;
+			        set=0;
+			    }
+			}
+
+			var timerInterval = null;
+
+			startBlinking = function(state) {
+			   if(timerInterval === null)
+			       timerInterval = setInterval(Timer, 650);
+			};
+
+			stopBlinking = function() {
+			    if(timerInterval !== null) {
+			        clearInterval(timerInterval);
+			        timerInterval = null;
+			        document.bgColor='#FFFFFF';
+			    }
+			};
+
+			setInterval(function() {
+				xmlhttp.open("GET", url, true);
+				xmlhttp.send();
+			}, 1000);
+		</script>
+	</head>
+	<body id="body">
+	</body>
+</html>
