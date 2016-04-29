@@ -1,0 +1,13 @@
+command,speech file text,sound file,video file,red light,fan
+engage,,tmp_warp_clean.mp3,warp.mp4,0,1
+initiate self destruct,,"selfdestruct11min_ep.mp3
+tng_red_alert1.mp3",,1,0
+abort self destruct,self destruct aborted,selfdestructsequenceterminated_ep.mp3,,0,0
+red alert,initiating red alert,tng_red_alert1.mp3,redalert.mp4,1,0
+cancel red alert,red alert terminated,,,0,0
+beam me up,energizing,tng_transporter3_clean.mp3,,0,0
+fire photon torpedo,firing photon torpedo,tng_torpedo_clean.mp3,photon.mp4,0,1
+fire phasers,firing phasers,tng_phaser4_clean_top.mp3,phaser.mp4,0,0
+identify,,computer_activate.mp3,,0,0
+battle stations,,tng_red_alert1.mp3,battle.mp4,0,0
+status report,situation normal,computer_sounds.mp3,,0,0

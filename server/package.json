@@ -1,0 +1,10 @@
+{
+  "name": "EnterpriseBridgeServer",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "dependencies": {
+    "async": "^2.0.0-rc.3",
+    "play-sound": "0.0.9",
+    "wemo-client": "^0.7.0"
+  }
+}
